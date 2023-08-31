@@ -1,7 +1,14 @@
 const args = process.argv.slice(2);
 
 const calculateCircleArea = (radius) => {
-  console.log("Radius is " + radius * 1);
+  if (radius) {
+    console.log(`Radius: ${radius * 1}`);
+    console.log(`Circle Area: ${radius * 1 * 2 * Math.PI}`);
+  } else {
+    console.error(
+      "Error 🚩: Please specify a radius to calculate the circle area near the folder name e.g. node assignment_1.js 5."
+    );
+  }
 };
 
-console.log(Math.PI);
+calculateCircleArea(args[0]);
