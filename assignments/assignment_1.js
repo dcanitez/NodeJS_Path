@@ -10,7 +10,7 @@ const calculateCircleArea = (radius) => {
       `${
         isNaN(radius)
           ? "Circle area could not be calculated."
-          : `Circle Area: ${Math.pow(parseInt(radius), 2) * Math.PI}`
+          : `Circle Area: ${Math.pow(parseFloat(radius), 2) * Math.PI}`
       }`
     );
   } else {
